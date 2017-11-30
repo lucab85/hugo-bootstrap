@@ -3,7 +3,7 @@
 {{ if not (eq (len .Site.Taxonomies.tags) 0) }}
 
 <div class="card card-block">
-  <h4 class="card-title">TAGS</h4>
+  <h4 class="card-title">{{ .Site.Data.Strings.tags }}</h4>
   <div class="card-text">
     <div class="widget">
       <ul>
