@@ -4,6 +4,7 @@
       <div class="col-xs-12 col-md-9">
         <p class="text-xs-center m-a-0 p-a-0">
           &copy; {{now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}
+          {{ partial "iubenda.html" . }}
         </p>
         {{ if .Site.Menus.footer }}
         <p class="text-xs-center  m-a-0 p-a-0">
